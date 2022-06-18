@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza size</title>
+    <script>
+        function order()
+        {
+            let c=parseInt(document.getElementById("s1").value)
+            let d=parseInt(document.getElementById("q1").value)
+            if(c==1)
+            {
+                
+                bill= 199*d;
+                b=bill*5/100;
+                finalbill=bill+b;
+            
+              
+               
+             
+                document.write("final bill" + ""+finalbill)
+                
+
+
+            
+            }
+         else   if(c==2)
+            {
+                
+                bill= 199*d;
+                b=bill*5/100;
+                finalbill=bill+b;
+            
+              
+               
+             
+                document.write("final bill" + ""+ finalbill)
+                
+
+
+            
+            }
+            else   if(c==2)
+            {
+                
+                bill= 79*d;
+                b=bill*5/100;
+                finalbill=bill+b;
+            
+              
+               
+             
+                document.write("final bill" + ""+finalbill)
+                
+
+
+            
+            }
+            else
+            {
+                {location.replace("sorry.html")}
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>select the size of the Dosa</h2>
+    <div>
+        <ol>
+            <li>Large=199/-</li>
+            <li>Medium=119/-</li>
+            <li>Small=79/-</li>
+        </ol>
+    </div>
+    <div>
+        <form>
+            <input type="text" id="s1" placeholder="select the size of the Dosa"/>
+            <input type="text" id="q1" placeholder="enter the quantity"/>
+            <input type="button" onclick="order()" value="submit" />
+        </form>
+    </div>
+</body>
+</html>
